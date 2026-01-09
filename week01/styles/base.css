@@ -1,0 +1,123 @@
+/*=============================Color Schema=======================
+
+*/
+
+/*=================================Site Wide=========================*/
+
+* {
+    font-family: "Ubuntu", sans-serif;
+    box-sizing: border-box;
+}
+
+/*=================================Header=========================*/
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 1rem 0 1.5rem 2rem;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: black;
+}
+
+/*=================================Hamburguer=========================*/
+
+.hamburguer {
+    background: none;
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+
+.hamburguer::before {
+    content: "\2630";
+}
+
+.hamburguer.show::before {
+    content: "\00D7";
+}
+
+
+/*=================================Navigation=========================*/
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .5rem;
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+}
+
+.navigation li.current {
+    background-color: #ddd;
+}
+
+.navigation a:hover {
+    background-color: rgb(92, 26, 153);
+    color: #ddd;
+}
+
+
+
+h1 {
+    margin-left: 10px;
+}
+
+/*=================================Footer=========================*/
+
+footer {
+    border-top: solid 1px #ddd;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.logos-media {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.logos-media a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
+
+.logos-media img {
+    width: 22px;
+    height: 22px;
+}
+
+.logos-media a:hover {
+    background-color: #ddd;
+}

@@ -1,0 +1,40 @@
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        margin: 0 auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+    }
+
+    .hamburguer {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        background-color: antiquewhite;
+        margin: 0;
+        padding: 0.2rem;
+    }
+
+    .navigation ul {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+    }
+
+    .navigation a {
+        text-decoration: none;
+        color: rgb(71, 71, 71);
+    }
+
+    .navigation a:hover {
+        background-color: rgb(92, 26, 153);
+        color: #ddd;
+    }
+}
