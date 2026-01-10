@@ -80,6 +80,18 @@ header span {
     color: var(--text-light);
 }
 
+.navigation li {
+    color: var(--text-light);
+}
+
+.navigation li.current {
+    color: var(--text-light);
+}
+
+.navigation li.current a {
+    color: var(--text-light);
+}
+
 .navigation a {
     display: block;
     padding: .5rem;
