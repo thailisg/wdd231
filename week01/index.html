@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thailis Gonzalez">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
@@ -19,8 +20,7 @@
 </head>
 
 <body>
-    <header>
-
+    <header class="principal-header">
         <img src="images/barra-de-chocolate.svg" alt="Site logo" width="512" height="512">
         <span>Thailis Gonzalez</span>
         <button id="hamburguer-btn" class="hamburguer"></button>
@@ -29,29 +29,46 @@
         <nav id="nav-bar" class="navigation">
             <ul>
                 <li class="current"><a href="#">Home</a></li>
-                <li><a href="#">Chamber project</a></li>
-                <li><a href="#">Final project</a></li>
+                <li class="current"><a href="#">Chamber project</a></li>
+                <li class="current"><a href="#">Final project</a></li>
             </ul>
         </nav>
     </nav>
     <main>
         <h1>Home</h1>
-        <section class="about-me">
-            <h2>About me</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit perferendis totam, omnis, est laborum
-                velit neque dolores tempore beatae recusandae provident? Perspiciatis atque magnam facere fugiat a,
-                optio ipsa blanditiis.
-            </p>
-        </section>
+        <div class="about-student">
+            <section class="about-me" id="about-desc">
+                <header class="section-header">
+                    <h2>About me</h2>
+                </header>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit perferendis totam, omnis, est
+                    laborum
+                    velit neque dolores tempore beatae recusandae provident? Perspiciatis atque magnam facere fugiat a,
+                    optio ipsa blanditiis.
+                </p>
+            </section>
 
-        <section class="about-photo">
-            <figure class="photo-about-me">
-                <img src="images/thailis-gonzalez.webp" alt="Photo of Thailis Gonzalez">
-            </figure>
-        </section>
+            <section class="about-me" id="about-photo">
+                <header class="section-header">
+                    <h2>Student Photo</h2>
+                </header>
 
-        <section class="certificates">
+                <figure class="photo-about-me">
+                    <img src="images/thailis-gonzalez.webp" alt="Photo of Thailis Gonzalez">
+                </figure>
+            </section>
+        </div>
+        <section class="about-me" id="certificates">
+            <header class="section-header">
+                <h2>Web Certificates Courses</h2>
+            </header>
 
+            <button class="filter" id="all">All</button>
+            <button class="filter" id="wdd">WDD</button>
+            <button class="filter" id="cse">CSE</button>
+
+            <ul id="courses"></ul>
+            <p id="total-credits"></p>
         </section>
     </main>
     <footer>

@@ -17,7 +17,7 @@
 
     .navigation {
         display: block;
-        background-color: antiquewhite;
+        background-color: var(--main-color);
         margin: 0;
         padding: 0.2rem;
     }
@@ -30,11 +30,11 @@
 
     .navigation a {
         text-decoration: none;
-        color: rgb(71, 71, 71);
+        color: #ddd;
     }
 
     .navigation a:hover {
-        background-color: rgb(92, 26, 153);
-        color: #ddd;
+        background-color: var(--color-accent);
+        color: var(--text-principal);
     }
 }
