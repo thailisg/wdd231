@@ -89,8 +89,6 @@ function showCourses(courseArray) {
 
     coursesList.innerHTML = "";
 
-    let credits = 0;
-
     courseArray.forEach(course => {
 
         const li = document.createElement("li");
@@ -102,10 +100,13 @@ function showCourses(courseArray) {
         }
 
         coursesList.appendChild(li);
-        credits += course.credits;
-
-        totalCredits.textContent = `Total Credits: ${credits}`;
     });
+
+    const credits = courseArray.reduce((total, course) => {
+        return total + course.credits;
+    }, 0);
+
+    totalCredits.textContent = `Total Credits: ${credits}`;
 
 }
 
