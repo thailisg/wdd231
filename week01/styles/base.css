@@ -168,6 +168,10 @@ h1 {
     background-color: #90e2a3;
 }
 
+.course.incomplete {
+    background-color: #f6b26b;
+}
+
 /*=================================Footer=========================*/
 
 footer {

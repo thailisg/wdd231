@@ -97,6 +97,10 @@ function showCourses(courseArray) {
 
         if (course.completed) {
             li.classList.add("completed");
+            li.innerHTML = `✔ ${course.subject} ${course.number}`;
+        } else {
+            li.classList.add("incomplete");
+            li.innerHTML = `${course.subject} ${course.number}`;
         }
 
         coursesList.appendChild(li);
