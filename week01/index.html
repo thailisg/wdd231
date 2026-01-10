@@ -15,6 +15,7 @@
         rel="stylesheet">
     <meta name="description" content="WDD231 - Web Frontend Development I. Page about the student Thailis Gonzalez">
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/list.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <title>Thailis Gonzalez</title>
 </head>
@@ -45,6 +46,9 @@
                     laborum
                     velit neque dolores tempore beatae recusandae provident? Perspiciatis atque magnam facere fugiat a,
                     optio ipsa blanditiis.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt in incidunt mollitia vero. Ab
+                    quas adipisci asperiores eius pariatur libero sint accusantium assumenda aperiam exercitationem
+                    itaque molestias maxime, distinctio culpa.
                 </p>
             </section>
 
@@ -62,10 +66,11 @@
             <header class="section-header">
                 <h2>Web Certificates Courses</h2>
             </header>
-
-            <button class="filter" id="all">All</button>
-            <button class="filter" id="wdd">WDD</button>
-            <button class="filter" id="cse">CSE</button>
+            <div class="btn-filter">
+                <button class="filter" id="all">All</button>
+                <button class="filter" id="wdd">WDD</button>
+                <button class="filter" id="cse">CSE</button>
+            </div>
 
             <ul id="courses"></ul>
             <p id="total-credits"></p>

@@ -100,6 +100,10 @@ h1 {
     grid-template-columns: 1fr;
 }
 
+.about-me p {
+    padding: .5rem;
+}
+
 .about-me header {
     background-color: var(--main-color);
     color: var(--text-light);
@@ -115,6 +119,53 @@ h1 {
     width: 100%;
     height: auto;
     max-width: 250px;
+    border-radius: 10px;
+}
+
+/*==========================Certificates section=========================*/
+
+.btn-filter {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: space-between;
+}
+
+#certificates button {
+    padding: .5rem;
+    margin: .5rem .5rem 0 .5rem;
+    min-width: 220px;
+    background-color: #636363;
+    color: var(--text-light);
+    border-radius: 5px;
+    cursor: pointer;
+    transition:
+        background-color 0.25s ease,
+        transform 0.15s ease,
+        box-shadow 0.15s ease;
+}
+
+#courses {
+    list-style: none;
+    padding: 0;
+    margin: .5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.course {
+    border: solid 1px var(--border-color);
+    background-color: var(--color-background);
+    cursor: pointer;
+    transition: background-color .3s ease, transform .2s ease;
+    padding: .8rem;
+    min-width: 220px;
+}
+
+.course.completed:hover {
+    background-color: #90e2a3;
 }
 
 /*=================================Footer=========================*/
