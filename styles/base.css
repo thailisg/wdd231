@@ -106,13 +106,13 @@ h1 {
 
 .header-section {
     background-color: var(--main-color);
-    color: var(--text-light);
     border-bottom: solid 1px var(--border-color);
     text-align: center;
 }
 
 .about-me h2 {
     font-size: 1rem;
+    color: var(--text-light);
 }
 
 .photo-about-me img {
