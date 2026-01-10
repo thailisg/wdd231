@@ -55,7 +55,7 @@
         grid-template-rows: auto 1fr;
     }
 
-    .section-header {
+    .header-section {
         width: 100%;
         padding: .5rem;
         box-sizing: border-box;
