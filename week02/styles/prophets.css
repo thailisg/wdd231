@@ -47,3 +47,10 @@ h1 {
     object-position: top;
     border-radius: 10px;
 }
+
+footer {
+    border-top: solid 1px var(--highlight-clor);
+    padding: 1rem 10px;
+    text-align: center;
+    margin-top: 1rem;
+}
