@@ -1,0 +1,21 @@
+@media only screen and (min-width: 38rem) {
+    .hamburguer {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        border-bottom: none;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .navigation a {
+        padding: 0.5rem 1rem;
+        border-radius: 6px;
+    }
+}

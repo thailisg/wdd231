@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "companyName": "American Food",
+            "companyAddress": "Av. Wheelwright 123",
+            "companyPhone": "+56 9 1234 5678",
+            "companyWebsite": "https://americanfood.cl",
+            "image": "images/americanfood.webp",
+            "membershipLevel": 2
+        },
+        {
+            "companyName": "Super Hair",
+            "companyAddress": "Batallon de atacama 555",
+            "companyPhone": "+56 9 8765 4321",
+            "companyWebsite": "https://superhair.cl",
+            "image": "images/superhair.webp",
+            "membershipLevel": 3
+        },
+        {
+            "companyName": "Fishing with Caldera",
+            "companyAddress": "Av. Wheelwright 231",
+            "companyPhone": "+56 9 4444 4444",
+            "companyWebsite": "https://fishingwithcaldera.cl",
+            "image": "images/pescaconcaldera.webp",
+            "membershipLevel": 3
+        },
+        {
+            "companyName": "Coffee M",
+            "companyAddress": "Av. medanoso 443",
+            "companyPhone": "+56 9 1111 1111",
+            "companyWebsite": "https://coffeeshop.cl",
+            "image": "images/coffeshop.webp",
+            "membershipLevel": 1
+        },
+        {
+            "companyName": "Read with Alicia",
+            "companyAddress": "Av. Batallon de atacama 777",
+            "companyPhone": "+56 9 8888 8888",
+            "companyWebsite": "https://readwithalicia.cl",
+            "image": "images/readwithalicia.webp",
+            "membershipLevel": 2
+        },
+        {
+            "companyName": "Illari's art",
+            "companyAddress": "Av. ossa cerda 222",
+            "companyPhone": "+56 9 2222 2222",
+            "companyWebsite": "https://artesaniaswithillari.cl",
+            "image": "images/illariartesania.webp",
+            "membershipLevel": 1
+        },
+        {
+            "companyName": "Museum Caldera",
+            "companyAddress": "Av. carvallo 123",
+            "companyPhone": "+56 9 3333 3333",
+            "companyWebsite": "https://museumcaldera.cl",
+            "image": "images/museumcaldera.webp",
+            "membershipLevel": 2
+        }
+    ]
+}

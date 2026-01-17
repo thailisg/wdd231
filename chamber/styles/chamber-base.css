@@ -1,0 +1,260 @@
+/*=============================Color Schema=======================*/
+:root {
+    --principal-color: #F4ECDC;
+    --secondary-color: #1E6091;
+    --highlight-colors: #E76F51;
+    --text-color: #2B2B2B;
+    --text-light: #ffffff;
+}
+
+/*=================================Site Wide=========================*/
+* {
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+/*=================================Header=========================*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+    border-bottom: 1px solid black;
+    background-color: var(--secondary-color);
+}
+
+header h1 {
+    font-size: 1.5rem;
+    display: none;
+}
+
+header img {
+    display: block;
+    width: 80px;
+    height: auto;
+}
+
+/*=================================Hamburguer=========================*/
+
+.hamburguer {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+
+.hamburguer::before {
+    content: "\2630";
+}
+
+.hamburguer.show::before {
+    content: "\00D7";
+}
+
+/*=================================Navigation=========================*/
+
+.navigation {
+    display: none;
+    border-bottom: solid 1px var(--highlight-colors);
+    background-color: var(--principal-color);
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: .5rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.navigation a:hover {
+    background-color: var(--highlight-colors);
+}
+
+/*=================================buttons=========================*/
+
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.menu button {
+    background-color: var(--highlight-colors);
+    color: var(--text-light);
+    cursor: pointer;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+}
+
+.menu button.active {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    box-shadow: 0 0 8px var(--highlight-colors);
+}
+
+
+/*=================================card=========================*/
+
+#members {
+    margin: 1rem;
+}
+
+#members a {
+    text-decoration: none;
+    color: var(--highlight-colors);
+}
+
+#members.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    border-radius: 10px;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#members.list {
+    display: flex;
+    flex-direction: column;
+}
+
+.member-card {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    margin: 0;
+    background-color: var(--principal-color);
+    border: solid 1px black;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#members.grid .card-container img {
+    display: block;
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+
+#members.list .card-container img {
+    display: none;
+}
+
+.card-info h2 {
+    margin: 0;
+    border-bottom: 2px solid var(--highlight-colors);
+    font-size: 1rem;
+}
+
+.card-info .details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+#members.list .member-card {
+    border: none;
+    box-shadow: none;
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+#members.list .member-card:nth-child(odd) {
+    background-color: var(--principal-color);
+}
+
+#members.list .member-card:nth-child(even) {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+}
+
+#members.list .card-info h2 {
+    border-bottom: none;
+    font-size: 1.1rem;
+}
+
+#members.list .card-info .details p,
+#members.list .card-info .details a {
+    margin: 0.1rem 0;
+}
+
+
+/*=================================footer=========================*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1rem;
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    margin: 0;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+footer span {
+    margin-bottom: .5rem;
+    font-weight: bold;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: .5rem;
+}
+
+.logos-media {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.logos-media a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
+
+.logos-media img {
+    width: 22px;
+    height: 22px;
+    color: var(--principal-color);
+}

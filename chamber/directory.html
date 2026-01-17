@@ -23,13 +23,64 @@
         href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
     <link rel="icon" href="images/caldera-img.ico">
+
+    <script src="scripts/navigation.js" defer></script>
     <script src="scripts/list.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <title>Caldera Chamber of Commerce</title>
 </head>
 
 <body>
+    <header>
+        <img src="images/logo-caldera.png" alt="logo of Caldera Chamber of Commerce">
+        <h1>aldera Chamber of Commerce</h1>
+        <button id="hamburguer-btn" class="hamburguer"></button>
+    </header>
 
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="item-nav"><a href="#" class="link-nav">Home</a></li>
+            <li class="item-nav"><a href="#" class="link-nav">Discover</a></li>
+            <li class="item-nav"><a href="#" class="link-nav">Directory</a></li>
+            <li class="item-nav"><a href="#" class="link-nav">Join</a></li>
+        </ul>
+
+    </nav>
+    <main>
+        <div class="menu">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+        <div class="grid" id="members">
+
+        </div>
+    </main>
+    <footer>
+        <div class="contact">
+            <span>Caldera Chamber of commerce</span>
+            <ul>
+                <li>Ossa Cerda 472, Caldera, Atacama</li>
+                <li>info@calderacommerce.com</li>
+                <li>+56955555555</li>
+            </ul>
+        </div>
+        <div class="logos">
+            <div class="logos-media">
+                <a href="https://www.facebook.com"><img src="images/facebook.svg" alt="facebook" width="16"
+                        height="16"></a>
+                <a href="https://github.com"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+                <a href="https://www.linkedin.com"><img src="images/linkedin.svg" alt="linkedin" width="16"
+                        height="16"></a>
+            </div>
+        </div>
+        <div>
+            <p>WDD231 Class project</p>
+            <p>
+                <span id="currentyear"></span> 🎮 Thailis Gonzalez 🎮 Chile
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 </body>
 
 </html>
