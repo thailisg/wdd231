@@ -2,7 +2,7 @@
 :root {
     --principal-color: #F4ECDC;
     --secondary-color: #1E6091;
-    --highlight-colors: #E76F51;
+    --highlight-colors: #ac2402;
     --text-color: #2B2B2B;
     --text-light: #ffffff;
 }
@@ -31,7 +31,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: .5rem 1rem;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(126, 126, 126);
     background-color: var(--secondary-color);
 }
 
@@ -105,7 +105,7 @@ header img {
 
 .menu button {
     background-color: var(--highlight-colors);
-    color: var(--text-color);
+    color: var(--text-light);
     cursor: pointer;
     padding: 0.5rem 1.2rem;
     border: none;
@@ -114,7 +114,7 @@ header img {
 
 .menu button.active {
     background-color: var(--secondary-color);
-    color: var(--text-light);
+    color: var(--text-color);
     box-shadow: 0 0 8px var(--highlight-colors);
 }
 
@@ -127,7 +127,10 @@ header img {
 
 #members a {
     text-decoration: none;
-    color: var(--highlight-colors);
+    color: var(--text-light);
+    background-color: var(--highlight-colors);
+    padding: .5rem;
+    border-radius: 10px;
 }
 
 #members.grid {
