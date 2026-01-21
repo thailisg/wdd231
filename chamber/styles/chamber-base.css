@@ -31,8 +31,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: .5rem 1rem;
-    border-bottom: 1px solid rgb(126, 126, 126);
+    border-bottom: 1px solid var(--highlight-colors);
     background-color: var(--secondary-color);
+    color: var(--text-light);
 }
 
 header h1 {
