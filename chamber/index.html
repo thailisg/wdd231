@@ -25,7 +25,9 @@
     <link rel="icon" href="images/caldera-img.ico">
 
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/list.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/weather-forecast.js" defer></script>
+    <script src="scripts/little-list.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <title>Directory - Caldera Chamber of Commerce</title>
 </head>
@@ -47,6 +49,64 @@
 
     </nav>
     <main>
+        <div class="hero-placeholder">
+            <picture class="hero-image">
+                <source srcset="images/caldera-desktop.webp" media="(min-width: 769px)">
+
+                <img src="images/caldera-mobile.webp" alt="Image of the Caldera Port" width="720" height="1280"
+                    loading="eager">
+            </picture>
+            <a href="#" class="join-btn">Join the Chamber</a>
+        </div>
+
+        <h1>Home</h1>
+        <div class="container-sections">
+
+            <section class="section-home">
+                <h2>Events</h2>
+                <div class="content-event">
+
+                </div>
+
+            </section>
+
+            <section class="section-home weather">
+
+                <h2>Current weather</h2>
+
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+
+                <div class="weather-info">
+                    <p><strong>High:</strong> <span id="temp-min"></span></p>
+                    <p><strong>Low:</strong> <span id="temp-max"></span></p>
+                    <p><strong>Humidity:</strong> <span id="humidity"></span></p>
+                    <p><strong>Sunrise:</strong> <span id="sunrise"></span></p>
+                    <p><strong>Sunset:</strong> <span id="sunset"></span></p>
+                </div>
+            </section>
+
+            <section class="section-home forecast">
+
+                <h2>Weather Forecast</h2>
+
+                <div class="weather-info" id="forecast-info">
+                    <p><strong>Current Temp:</strong> <span id="current-temp"></span></p>
+                    <p><strong>Tomorrow:</strong> <span id="tomorrow-temp"></span></p>
+                    <p><strong>Day after:</strong> <span id="dayafter-temp"></span></p>
+
+                </div>
+
+            </section>
+        </div>
+
+        <section class="section-home" id="company-spotlights">
+            <h2>Members</h2>
+            <div id="spotlight" class="members"></div>
+        </section>
+
 
     </main>
     <footer>

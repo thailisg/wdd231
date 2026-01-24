@@ -18,4 +18,21 @@
         padding: 0.5rem 1rem;
         border-radius: 6px;
     }
+
+    .container-sections {
+        grid-template-columns: 2fr 1fr 1fr;
+        align-items: stretch;
+    }
+
+    #company-spotlights .members {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #company-spotlights .member-card {
+        flex: 1;
+        max-width: 32%;
+        margin: 0;
+    }
+
 }
