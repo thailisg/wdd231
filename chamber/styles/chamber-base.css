@@ -36,11 +36,6 @@ header {
     color: var(--text-light);
 }
 
-header h1 {
-    font-size: 1.5rem;
-    display: none;
-}
-
 header img {
     display: block;
     width: 80px;
