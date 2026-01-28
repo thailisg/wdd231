@@ -190,6 +190,29 @@ h1 {
     background-color: #f6b26b;
 }
 
+/*=================================Modal=========================*/
+
+#course-details {
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background-color: var(--color-background);
+    color: var(--text-principal);
+}
+
+::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+    position: absolute;
+    top: 23px;
+    right: 23px;
+    padding: .5rem 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+}
+
 /*=================================Footer=========================*/
 
 footer {

@@ -1,4 +1,4 @@
-const courses = [
+export const courses = [
     {
         subject: 'CSE',
         number: 110,
@@ -85,7 +85,7 @@ const allBtn = document.querySelector("#all");
 const wddBtn = document.querySelector("#wdd");
 const cseBtn = document.querySelector("#cse");
 
-function showCourses(courseArray) {
+export function showCourses(courseArray) {
 
     coursesList.innerHTML = "";
 
@@ -127,5 +127,3 @@ cseBtn.addEventListener("click", () => {
     const cseCourses = courses.filter(course => course.subject === "CSE");
     showCourses(cseCourses);
 });
-
-showCourses(courses);
