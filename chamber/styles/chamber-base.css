@@ -312,6 +312,9 @@ header img {
 }
 
 /*=================================Form=========================*/
+.form-h1 {
+    text-align: center;
+}
 
 .form-modals {
     padding: 1rem;
