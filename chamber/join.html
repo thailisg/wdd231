@@ -45,72 +45,120 @@
         </ul>
     </nav>
     <main>
-        <form action="thankyou.html" method="get">
+        <div class="form-modals">
+            <form action="thankyou.html" method="get">
 
-            <label>
-                First Name:
-                <input type="text" name="firstName" title="Enter your first name" required autocomplete="given-name">
-            </label>
+                <!-- Personal Information -->
+                <fieldset>
+                    <legend>Personal Information</legend>
 
-            <label>
-                Last Name:
-                <input type="text" name="lastName" title="Enter your last name" required autocomplete="family-name">
-            </label>
+                    <label>
+                        First Name:
+                        <input type="text" name="firstName" title="Enter your first name" required
+                            autocomplete="given-name">
+                    </label>
 
-            <label>
-                Organizational Title:
-                <input type="text" name="orgTitle" title="Enter your organizational title"
-                    autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
-            </label>
+                    <label>
+                        Last Name:
+                        <input type="text" name="lastName" title="Enter your last name" required
+                            autocomplete="family-name">
+                    </label>
+                </fieldset>
 
-            <label>
-                Email:
-                <input type="email" name="email" title="Enter your email address" required autocomplete="email"
-                    placeholder="example@email.com">
-            </label>
+                <!-- Contact Information -->
+                <fieldset>
+                    <legend>Contact Information</legend>
 
-            <label>
-                Mobile Phone:
-                <input type="tel" name="mobile" title="Enter your mobile phone number" required autocomplete="tel">
-            </label>
+                    <label>
+                        Email:
+                        <input type="email" name="email" title="Enter your email address" required autocomplete="email"
+                            placeholder="example@email.com">
+                    </label>
 
-            <label>
-                Business/Organization Name:
-                <input type="text" name="orgName" title="Enter your business or organization name" required
-                    autocomplete="organization">
-            </label>
+                    <label>
+                        Mobile Phone:
+                        <input type="tel" name="mobile" title="Enter your mobile phone number" required
+                            autocomplete="tel">
+                    </label>
+                </fieldset>
 
-            <label>
-                Membership Level:
-                <select name="membership" title="Select a membership level" required>
-                    <option value="">--Select--</option>
-                    <option value="np">NP Membership (Non-profit, no fee)</option>
-                    <option value="bronze">Bronze Membership</option>
-                    <option value="silver">Silver Membership</option>
-                    <option value="gold">Gold Membership</option>
-                </select>
-            </label>
+                <!-- Account/Organization Information -->
+                <fieldset>
+                    <legend>Account Information</legend>
 
-            <label>
-                Business/Organization Description:
-                <textarea name="orgDesc" title="Describe your business or organization"></textarea>
-            </label>
+                    <label>
+                        Organizational Title:
+                        <input type="text" name="orgTitle" title="Enter your organizational title"
+                            autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+                    </label>
 
-            <input type="hidden" name="timestamp" id="timestamp">
+                    <label>
+                        Business/Organization Name:
+                        <input type="text" name="orgName" title="Enter your business or organization name" required
+                            autocomplete="organization">
+                    </label>
 
-            <input type="submit" value="Submit Application">
-        </form>
+                    <label>
+                        Membership Level:
+                        <select name="membership" title="Select a membership level" required>
+                            <option value="">--Select--</option>
+                            <option value="np">NP Membership (Non-profit, no fee)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
 
-        <section class="modal" id="membership-buttons">
-            <button class="btn-modal" data-id="0">NP Membership</button>
-            <button class="btn-modal" data-id="1">Bronze Membership</button>
-            <button class="btn-modal" data-id="2">Silver Membership</button>
-            <button class="btn-modal" data-id="3">Gold Membership</button>
-        </section>
+                    <label>
+                        Business/Organization Description:
+                        <textarea name="orgDesc" title="Describe your business or organization"></textarea>
+                    </label>
+                </fieldset>
 
-        <dialog id="member-modal"></dialog>
-        
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <input type="submit" value="Submit Application">
+            </form>
+
+            <section class="modal" id="membership-buttons">
+                <h2>Membership Levels</h2>
+                <button class="btn-modal" data-id="0">NP Membership</button>
+                <button class="btn-modal" data-id="1">Bronze Membership</button>
+                <button class="btn-modal" data-id="2">Silver Membership</button>
+                <button class="btn-modal" data-id="3">Gold Membership</button>
+            </section>
+
+            <dialog id="member-modal"></dialog>
+        </div>
+
     </main>
+
+    <footer>
+        <div class="contact">
+            <span>Caldera Chamber of commerce</span>
+            <ul>
+                <li>Ossa Cerda 472, Caldera, Atacama</li>
+                <li>info@calderacommerce.com</li>
+                <li>+56955555555</li>
+            </ul>
+        </div>
+        <div class="logos">
+            <div class="logos-media">
+                <a href="https://www.facebook.com"><img src="images/facebook.svg" alt="facebook" width="16"
+                        height="16"></a>
+                <a href="https://github.com"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+                <a href="https://www.linkedin.com"><img src="images/linkedin.svg" alt="linkedin" width="16"
+                        height="16"></a>
+            </div>
+        </div>
+        <div>
+            <p>WDD231 Class project</p>
+            <p>
+                <span id="currentyear"></span> 🎮 Thailis Gonzalez 🎮 Chile
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
 
 </body>
 

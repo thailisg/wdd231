@@ -35,4 +35,25 @@
         margin: 0;
     }
 
+    /*=================================Form modals=========================*/
+
+    .form-modals {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+        align-items: start;
+    }
+
+    form {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .modal {
+        margin-top: 0;
+        justify-self: start;
+    }
+
 }
