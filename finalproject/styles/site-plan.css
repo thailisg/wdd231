@@ -66,13 +66,16 @@ button:hover {
 }
 
 #siteplan-modal {
+    width: 90%;
     background-color: var(--button-color);
     border: 3px solid var(--principal-color);
     border-radius: 12px;
     padding: 1.5rem 2rem;
     max-width: 600px;
+    max-height: 90vh;
     color: var(--text-dark);
     font-family: 'Roboto', sans-serif;
+    overflow-y: auto;
 }
 
 #siteplan-modal::backdrop {
