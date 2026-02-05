@@ -1,0 +1,90 @@
+/*=============================Color Schema=======================*/
+
+:root {
+    --principal-color: #654321;
+    --text-color-light: #FFFFFF;
+    --button-color: #F3E9DC;
+    --text-dark: #424447;
+}
+
+/*=================================Site Wide=========================*/
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+main {
+    flex: 1;
+}
+
+/*=================================Header=========================*/
+
+header,
+footer {
+    text-align: center;
+    background-color: var(--principal-color);
+    color: var(--text-color-light);
+    padding: 2rem;
+    text-shadow: 0 0 5px #000;
+    border-top: 5px solid #333;
+    border-bottom: 5px solid #333;
+}
+
+/*===============================Buttons and modal=========================*/
+
+.project-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 1rem;
+    background-color: rgba(255, 250, 230, 0.1);
+    display: grid;
+    grid-template-rows: auto;
+    box-shadow: 0 0 20px #00000070;
+    border-radius: 8px;
+}
+
+.btn-modal {
+    background-color: var(--button-color);
+    color: var(--text-dark);
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    margin: .5rem;
+}
+
+button:hover {
+    background-color: #657A59;
+    color: var(--text-color-light);
+}
+
+#siteplan-modal {
+    background-color: var(--button-color);
+    border: 3px solid var(--principal-color);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    max-width: 600px;
+    color: var(--text-dark);
+    font-family: 'Roboto', sans-serif;
+}
+
+#siteplan-modal::backdrop {
+    background: rgba(0, 0, 0, 0.45);
+}
+
+#siteplan-modal h2 {
+    color: var(--text-dark);
+    margin-top: 0;
+}
+
+#siteplan-modal p,
+#siteplan-modal li {
+    line-height: 1.6;
+}
