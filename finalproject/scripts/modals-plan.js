@@ -32,11 +32,11 @@ const sitePlanData = [
         description: "The wireframes show the layout for both mobile and desktop views.",
         images: [
             {
-                src: "images/wireframe-mobile.png",
+                src: "images/mobile-view.webp",
                 alt: "Mobile wireframe for Americano restaurant website"
             },
             {
-                src: "images/wireframe-desktop.png",
+                src: "images/desktop-view.webp",
                 alt: "Desktop wireframe for Americano restaurant website"
             }
         ]
