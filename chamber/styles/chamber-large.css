@@ -1,4 +1,4 @@
-@media only screen and (min-width: 38rem) {
+@media only screen and (min-width: 1025px) {
     .hamburguer {
         display: none;
     }
@@ -55,5 +55,34 @@
         margin-top: 0;
         justify-self: start;
     }
+
+    /*=================================discover page=========================*/
+
+    .place-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+
+        grid-template-areas:
+            "image title"
+            "image description"
+            "image address"
+            "image button";
+    }
+
+    .places-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .place-card img {
+        border-radius: 15px;
+        transition: border-radius 0.3s ease;
+    }
+
+    .place-card img:hover {
+        border-radius: 15px 150px;
+    }
+
+
 
 }

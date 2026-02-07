@@ -517,6 +517,79 @@ input[type="submit"] {
     text-align: left;
 }
 
+/*=================================Discover page=========================*/
+
+.places-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 1rem;
+    box-sizing: border-box;
+}
+
+.place-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    padding: 1rem;
+    background-color: var(--principal-color);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+    grid-template-areas:
+        "title"
+        "image"
+        "description"
+        "address"
+        "button";
+}
+
+.place-card img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/*===========areas=========*/
+.place-card h2 {
+    grid-area: title;
+}
+
+.place-card figure {
+    grid-area: image;
+}
+
+.place-card address {
+    grid-area: address;
+}
+
+.place-card p {
+    grid-area: description;
+}
+
+.place-card button {
+    grid-area: button;
+}
+
+/*=================================message=========================*/
+
+.visit-message {
+    background-color: #f2f2f2;
+    border-left: 4px solid var(--secondary-color);
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
 /*=================================footer=========================*/
 
 footer {

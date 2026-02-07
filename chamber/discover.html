@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Thailis Gonzalez">
     <meta name="description"
-        content="WDD231. Home page Caldera Chamber of Commerce: This page contains general information such as Caldera's weather, events, and some local businesses">
-    <meta property="og:title" content="Home - Caldera Chamber of Commerce">
+        content="WDD231 - Web Frontend Development I. Discover page Caldera Chamber of Commerce: This page provides objective and representative information about the area to attract potential chamber members and visitors.">
+    <meta property="og:title" content="Discover - Caldera Chamber of Commerce">
     <meta property="og:description"
         content="Caldera Chamber of Commerce: supporting local businesses, events, tourism and community economic development.">
     <meta property="og:image" content="https://thailisg.github.io/wdd231/chamber/images/atacama-desert.webp">
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Home - Caldera Chamber of Commerce">
-    <meta property="og:url" content="https://thailisg.github.io/wdd231/chamber/index.html">
+    <meta property="og:site_name" content="Caldera Chamber of Commerce">
+    <meta property="og:url" content="https://thailisg.github.io/wdd231/chamber/discover.html">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber-base.css">
+    <link rel="stylesheet" href="styles/chamber-medium.css">
     <link rel="stylesheet" href="styles/chamber-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,9 +26,8 @@
     <link rel="icon" href="images/caldera-img.ico">
 
     <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/weather-forecast.js" defer></script>
-    <script src="scripts/little-list.js" defer></script>
+    <script src="scripts/places.js" type="module"></script>
+    <script src="scripts/message.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <title>Directory - Caldera Chamber of Commerce</title>
 </head>
@@ -45,60 +45,15 @@
             <li class="item-nav"><a href="directory.html" class="link-nav">Directory</a></li>
             <li class="item-nav"><a href="join.html" class="link-nav">Join</a></li>
         </ul>
+
     </nav>
 
     <main>
-
-        <div class="hero-placeholder">
-            <picture class="hero-image">
-                <source srcset="images/caldera-desktop.webp" media="(min-width: 769px)">
-
-                <img src="images/caldera-mobile.webp" alt="Image of the Caldera Port" width="720" height="1280"
-                    loading="eager">
-            </picture>
-            <a href="#" class="join-btn">Join the Chamber</a>
-        </div>
-
-        <h1>Home</h1>
-        <div class="container-sections">
-
-            <section class="section-home">
-                <h2>Events</h2>
-                <div class="content-event">
-
-                </div>
-            </section>
-
-            <section class="section-home weather">
-                <h2>Current weather</h2>
-                <figure>
-                    <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather icon">
-                    <figcaption></figcaption>
-                </figure>
-                <div class="weather-info">
-                    <p><strong>High:</strong> <span id="temp-min"></span></p>
-                    <p><strong>Low:</strong> <span id="temp-max"></span></p>
-                    <p><strong>Humidity:</strong> <span id="humidity"></span></p>
-                    <p><strong>Sunrise:</strong> <span id="sunrise"></span></p>
-                    <p><strong>Sunset:</strong> <span id="sunset"></span></p>
-                </div>
-            </section>
-
-            <section class="section-home forecast">
-                <h2>Weather Forecast</h2>
-                <div class="weather-info" id="forecast-info">
-                    <p><strong>Current Temp:</strong> <span id="current-temp"></span></p>
-                    <p><strong>Tomorrow:</strong> <span id="tomorrow-temp"></span></p>
-                    <p><strong>Day after:</strong> <span id="dayafter-temp"></span></p>
-                </div>
-            </section>
-        </div>
-        <section class="section-home" id="company-spotlights">
-            <h2>Members</h2>
-            <div id="spotlight" class="members"></div>
-        </section>
-
+        <div id="visit-message" class="visit-message"></div>
+        <h1>Discover Caldera</h1>
+        <section id="places" class="places-grid"></section>
     </main>
+
     <footer>
         <div class="contact">
             <span>Caldera Chamber of commerce</span>
