@@ -76,4 +76,27 @@
         width: 100%;
         gap: 0.5rem 1rem;
     }
+
+    /*==============================Contact: Form==============================*/
+
+    .contact-form {
+        max-width: 800px;
+        gap: 2rem;
+    }
+
+    fieldset {
+        padding: 2rem;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 1.1rem;
+        padding: 0.8rem;
+    }
+
+    input[type="submit"] {
+        padding: 0.9rem 2rem;
+        font-size: 1.1rem;
+    }
 }
