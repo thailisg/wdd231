@@ -3,8 +3,6 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 const tempMin = document.querySelector('#temp-min');
 const tempMax = document.querySelector('#temp-max');
-const sunrise = document.querySelector('#sunrise');
-const sunset = document.querySelector('#sunset');
 
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-27.06&lon=-70.81&units=metric&appid=bd7cbfddabf906f39120984d7cb8e48f';
 
@@ -41,8 +39,6 @@ function displayResults(data) {
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
-    sunrise.textContent = formatTime(data.sys.sunrise);
-    sunset.textContent = formatTime(data.sys.sunset);
 }
 
 apiFetch();
