@@ -15,4 +15,10 @@
     #menu-short .card:nth-child(n+5) {
         display: none;
     }
+
+    /*=================================Menu: Full menu=========================*/
+    #menu-cards .card {
+        width: 100%;
+        gap: 0.5rem 1rem;
+    }
 }
