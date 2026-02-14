@@ -177,6 +177,13 @@ nav ul a:focus {
     #menu-short .card:nth-child(n+4) {
         display: none;
     }
+
+    /*=========menu: full menu===========*/
+
+    #menu-cards {
+        max-width: 450px;
+    }
+
 }
 
 /*===============================Index: schedule section===========================*/
@@ -279,6 +286,11 @@ nav ul a:focus {
     gap: 1rem;
     justify-items: center;
     padding: 2rem 1rem;
+}
+
+#menu-cards .card {
+    width: 100%;
+    gap: 0.5rem 1rem;
 }
 
 /*===============================Menu: Recommendation===========================*/
