@@ -254,6 +254,9 @@ nav ul a:focus {
 
 .review-rating {
     color: #f5a623;
+    background-color: var(--text-dark);
+    border-radius: 5px;
+    padding: 5px;
 }
 
 /*===============================Index: Weather section===========================*/
