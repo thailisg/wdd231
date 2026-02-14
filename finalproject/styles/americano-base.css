@@ -288,7 +288,6 @@ nav ul a:focus {
 .recommendation button {
     padding: 0.5rem 1rem;
     border-radius: 8px;
-    background-color: transparent;
     cursor: pointer;
     font-size: 1rem;
     transition: all 0.2s ease;
@@ -407,6 +406,9 @@ input[type="submit"]:hover {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     text-align: center;
     position: relative;
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: all 0.3s ease;
 }
 
 .close {
@@ -420,12 +422,6 @@ input[type="submit"]:hover {
 
 .close:hover {
     color: #ff0000;
-}
-
-.modal-content {
-    transform: translateY(-30px);
-    opacity: 0;
-    transition: all 0.3s ease;
 }
 
 .modal.show .modal-content {
