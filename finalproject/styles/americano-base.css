@@ -208,6 +208,8 @@ nav ul a:focus {
 .desktop-only-schedule {
     display: none;
     width: 100%;
+    aspect-ratio: 1051 / 699;
+    object-fit: cover;
     margin-top: 1rem;
     border-radius: 8px;
 }

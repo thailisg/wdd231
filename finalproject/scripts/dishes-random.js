@@ -16,7 +16,7 @@ async function loadRandomDishes() {
 
             card.innerHTML = `
                 <h3>${item.name}</h3>
-                <img src="${item.img}" alt="${item.name}">
+                <img src="${item.img}" alt="${item.name}" loading="lazy" width="400" height="400">
                 <p>${item.ingredients.join(", ")}</p>
             `;
 

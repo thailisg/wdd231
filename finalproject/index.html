@@ -20,12 +20,12 @@
     <link rel="stylesheet" href="styles/americano-large.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
+    <link rel="preload"
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-        rel="stylesheet">
+        as="style" onload="this.rel='stylesheet'">
     <link rel="icon" href="images/americano-fav.ico">
     <script src="scripts/navigation.js" defer></script>
-    <script type="module" src="scripts/dishes-random.mjs"></script>
+    <script src="scripts/dishes-random.js" defer></script>
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <title>Americano Restaurant | Home</title>
@@ -35,7 +35,7 @@
     <!--=====Header======-->
     <header>
         <div class="img-logo">
-            <img src="images/logo-americano-ofi.webp" alt="Americano Restaurant logo">
+            <img src="images/logo-americano-ofi.webp" alt="Americano Restaurant logo" width="200" height="200">
         </div>
         <nav id="nav-bar">
             <ul id="nav-menu">
@@ -53,7 +53,8 @@
             <picture>
                 <source srcset="images/hero-img-mobile.webp" media="(max-width: 768px)">
                 <source srcset="images/hero-img.webp" media="(min-width: 769px)">
-                <img src="images/hero-img.webp" alt="representative image of the restaurant's dishes">
+                <img src="images/hero-img.webp" alt="Representative image of the restaurant's dishes"
+                    fetchpriority="high" width="1200" height="600">
             </picture>
         </section>
         <!--=====Random dishes section======-->
@@ -68,14 +69,15 @@
                 <div class="hours-container">
                     <span class="full-week">Monday - Sunday: 9:00 AM - 1:00 AM</span>
                 </div>
-                <img src="images/locos-mayo.webp" alt="image of the dish 'locos con mayo'"
-                    class="desktop-only-schedule">
+                <img src="images/locos-mayo.webp" alt="image of the dish 'locos con mayo'" width="400" height="266"
+                    loading="lazy" class="desktop-only-schedule">
             </section>
             <!--=====Weather section======-->
             <section class="section-home weather">
                 <h2>Current weather</h2>
                 <figure>
-                    <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather icon">
+                    <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather icon"
+                        width="100" height="100" loading="lazy" crossorigin="anonymous">
                     <figcaption></figcaption>
                 </figure>
                 <div class="weather-info">
