@@ -468,3 +468,7 @@ footer li {
     margin: 10px;
     text-align: center;
 }
+
+footer a {
+    color: var(--text-light);
+}
