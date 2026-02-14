@@ -1,0 +1,18 @@
+@media (min-width: 769px) and (max-width: 1199px) {
+
+    /*=================================Index: Random dishes section=========================*/
+    .card {
+        display: grid;
+        grid-template-areas:
+            "img title"
+            "img ingredients";
+        grid-template-columns: 150px 1fr;
+        grid-template-rows: auto auto;
+        gap: 0.5rem 1rem;
+        align-items: center;
+    }
+
+    #menu-short .card:nth-child(n+5) {
+        display: none;
+    }
+}

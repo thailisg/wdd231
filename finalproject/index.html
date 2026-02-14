@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Thailis Gonzalez">
+    <meta name="description"
+        content="Enjoy our home-style restaurant in Caldera, Chile, offering hearty meat and fresh fish dishes made with quality ingredients and authentic flavors">
+    <meta property="og:title" content="Home - Americano">
+    <meta property="og:description"
+        content="Discover the authentic coastal flavors of Caldera, Chile. Savor home-style dishes made with fresh ingredients and traditional recipes">
+    <meta property="og:image" content="https://thailisg.github.io/wdd231/finalproject/images/logo-americano-ofi.webp">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Americano">
+    <meta property="og:url" content="https://thailisg.github.io/wdd231/finalproject/">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/americano-base.css">
+    <link rel="stylesheet" href="styles/americano-mid.css">
+    <link rel="stylesheet" href="styles/americano-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/americano-fav.ico">
+    <script src="scripts/navigation.js" defer></script>
+    <script type="module" src="scripts/dishes-random.mjs"></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <title>Americano Restaurant | Home</title>
+</head>
+
+<body>
+    <!--=====Header======-->
+    <header>
+        <div class="img-logo">
+            <img src="images/logo-americano-ofi.webp" alt="Americano Restaurant logo">
+        </div>
+        <nav id="nav-bar">
+            <ul>
+                <li class="nav-item"><a href="index.html">Home</a></li>
+                <li class="nav-item"><a href="menu.html">Menu</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+                <li class="nav-item"><a href="about.html">About us</a></li>
+            </ul>
+            <button id="hamburger-btn" class="hamburger" aria-label="Toggle navigation"></button>
+        </nav>
+    </header>
+    <!--=====Main======-->
+    <main>
+        <!--=====Hero section======-->
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-img-mobile.webp" media="(max-width: 768px)">
+                <source srcset="images/hero-img.webp" media="(min-width: 769px)">
+                <img src="images/hero-img.webp" alt="representative image of the restaurant's dishes">
+            </picture>
+        </section>
+        <!--=====Random dishes section======-->
+        <section class="menu-section" id="menu-short">
+            <h2>Some of our dishes</h2>
+            <div id="random-dishes"></div>
+        </section>
+        <!--=====Schedule======-->
+        <div class="sections-row">
+            <section class="schedule">
+                <h2>Opening Hours</h2>
+                <div class="hours-container">
+                    <span class="full-week">Monday - Sunday: 9:00 AM - 1:00 AM</span>
+                </div>
+                <img src="images/locos-mayo.webp" alt="image of the dish 'locos con mayo'"
+                    class="desktop-only-schedule">
+            </section>
+            <!--=====Weather section======-->
+            <section class="section-home weather">
+                <h2>Current weather</h2>
+                <figure>
+                    <img id="weather-icon" src="https://openweathermap.org/img/wn/01d@2x.png" alt="Weather icon">
+                    <figcaption></figcaption>
+                </figure>
+                <div class="weather-info">
+                    <p><strong>Current:</strong> <span id="current-temp"></span></p>
+                    <p><strong>High:</strong> <span id="temp-max"></span></p>
+                    <p><strong>Low:</strong> <span id="temp-min"></span></p>
+                    <p><strong>Sunrise:</strong> <span id="sunrise"></span></p>
+                    <p><strong>Sunset:</strong> <span id="sunset"></span></p>
+                </div>
+            </section>
+            <!--=====Reviews======-->
+            <section class="reviews">
+                <h2>Reviews</h2>
+
+                <div class="reviews-container">
+                    <!--=====1.Review======-->
+                    <article class="review-card">
+                        <p class="review-text">
+                            Just Amazing! The seafood was fresh and sooo tasty. Definitely one of the best spots in
+                            Caldera.
+                        </p>
+                        <p class="review-author">— Cami Diaz</p>
+                        <p class="review-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    </article>
+                    <!--=====2. Review======-->
+                    <article class="review-card">
+                        <p class="review-text">
+                            Great atmosphere and very good atention. The steak was perfect, exactly how I asked. Highly
+                            recommended!
+                        </p>
+                        <p class="review-author">— Gab35</p>
+                        <p class="review-rating">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+                    </article>
+                    <!--=====3.Review======-->
+                    <article class="review-card">
+                        <p class="review-text">
+                            Friendly staff and authentic home-style dishes. The egg pan was absolutely delicious.
+                        </p>
+                        <p class="review-author">— Valen Lu</p>
+                        <p class="review-rating">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+    </main>
+    <!--=====Footer======-->
+    <footer>
+        <div class="contact-footer">
+            <span>Americano Restaurant</span>
+            <ul>
+                <li><b>Address</b>: Gallo & Ossa Cerda, 1571178 Caldera, Atacama</li>
+                <li><b>Email</b>: info@americano.com</li>
+                <li><b>Phone</b>: +56955555555</li>
+            </ul>
+        </div>
+        <div class="logo">
+            <p>WDD231 Class project</p>
+            <a href="https://github.com"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+        </div>
+        <div>
+            <p>
+                <span id="currentyear"></span> 🎮 Thailis Gonzalez 🎮 Chile
+            </p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

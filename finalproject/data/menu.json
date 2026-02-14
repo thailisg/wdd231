@@ -1,0 +1,161 @@
+[
+    {
+        "name": "Beef Tacos",
+        "ingredients": [
+            "beef",
+            "lettuce",
+            "tomato",
+            "guacamole",
+            "garlic mayo"
+        ],
+        "img": "images/taco-carne.webp"
+    },
+    {
+        "name": "Chicken Tacos",
+        "ingredients": [
+            "chicken",
+            "lettuce",
+            "tomato",
+            "guacamole",
+            "garlic mayo"
+        ],
+        "img": "images/taco-pollo.webp"
+    },
+    {
+        "name": "Italian Steak Sandwich",
+        "ingredients": [
+            "steak",
+            "avocado",
+            "tomato",
+            "toasted bread"
+        ],
+        "img": "images/churrasco-italiano.webp"
+    },
+    {
+        "name": "American Steak Sandwich",
+        "ingredients": [
+            "steak",
+            "bacon",
+            "cheese",
+            "caramelized onions",
+            "toasted bread"
+        ],
+        "img": "images/churrasco-americano.webp"
+    },
+    {
+        "name": "Hake with Shrimp Sauce",
+        "ingredients": [
+            "french fries",
+            "fried hake",
+            "shrimp",
+            "béchamel sauce"
+        ],
+        "img": "images/reineta-camaron.webp"
+    },
+    {
+        "name": "Steak with Fries and Egg",
+        "ingredients": [
+            "steak cooked to preference",
+            "french fries",
+            "fried egg",
+            "caramelized onions"
+        ],
+        "img": "images/lomo-pobre.webp"
+    },
+    {
+        "name": "Egg Skillet",
+        "ingredients": [
+            "2 eggs",
+            "three slices of bread",
+            "oil",
+            "salt"
+        ],
+        "img": "images/paila-egg.webp"
+    },
+    {
+        "name": "Seafood Skillet",
+        "ingredients": [
+            "hake",
+            "mussels",
+            "shrimp",
+            "squid",
+            "fish stock",
+            "white wine",
+            "cream"
+        ],
+        "img": "images/paila-marina.webp"
+    },
+    {
+        "name": "Steak with Two Sides",
+        "ingredients": [
+            "steak",
+            "mixed salad",
+            "french fries"
+        ],
+        "img": "images/lomo.webp"
+    },
+    {
+        "name": "Individual Neapolitan Pizza",
+        "ingredients": [
+            "artisan dough",
+            "tomato sauce",
+            "cheese",
+            "tomato",
+            "ham"
+        ],
+        "img": "images/pizza-indv.webp"
+    },
+    {
+        "name": "Beef Empanada",
+        "ingredients": [
+            "ground beef",
+            "onion",
+            "hard-boiled egg",
+            "olives",
+            "baked dough"
+        ],
+        "img": "images/emp-pino.webp"
+    },
+    {
+        "name": "Mixed Ceviche",
+        "ingredients": [
+            "hake",
+            "shrimp",
+            "lemon juice",
+            "red onion",
+            "cilantro"
+        ],
+        "img": "images/ceviche-mixto.webp"
+    },
+    {
+        "name": "Crab Pie",
+        "ingredients": [
+            "crab meat",
+            "cream",
+            "grated cheese",
+            "breadcrumbs"
+        ],
+        "img": "images/pastel-jaiba.webp"
+    },
+    {
+        "name": "Chicken Caesar Salad",
+        "ingredients": [
+            "romaine lettuce",
+            "grilled chicken",
+            "parmesan cheese",
+            "croutons",
+            "caesar dressing"
+        ],
+        "img": "images/caesar.webp"
+    },
+    {
+        "name": "Cheese and Bacon Fries",
+        "ingredients": [
+            "french fries",
+            "cheddar cheese",
+            "crispy bacon",
+            "chives"
+        ],
+        "img": "images/fries.webp"
+    }
+]

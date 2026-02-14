@@ -1,0 +1,79 @@
+@media (min-width: 1200px) {
+
+    .hamburger {
+        display: none;
+    }
+
+    nav ul {
+        max-height: none;
+        opacity: 1;
+        position: static;
+        flex-direction: row;
+        gap: 1rem;
+        width: auto;
+        background: none;
+        box-shadow: none;
+    }
+
+    nav ul a {
+        color: var(--text-light);
+    }
+
+    /*===============================Index: Hero section===========================*/
+    .hero img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    /*===============================Index: Random dishes section===========================*/
+
+    #random-dishes {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 1rem;
+    }
+
+    #menu-short .card {
+        display: block;
+    }
+
+    /*===============================Index: Sections Row: schedule, weather and reviews===========================*/
+    .sections-row {
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        gap: 2rem;
+        margin: 2rem auto;
+        max-width: 1200px;
+    }
+
+    /*===============================Index: Review section===========================*/
+    .reviews-container {
+        flex-direction: row;
+    }
+
+    /*===============================Index: Image of 'locos con mayo' in schedule===========================*/
+
+    .desktop-only-schedule {
+        display: block;
+    }
+
+    /*===============================Menu: full menu desktop===========================*/
+
+    #menu-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    #menu-cards .card {
+        grid-template-areas:
+            "img title"
+            "img ingredients";
+        grid-template-columns: 150px 1fr;
+        text-align: left;
+        align-items: center;
+        width: 100%;
+        gap: 0.5rem 1rem;
+    }
+}
