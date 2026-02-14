@@ -25,6 +25,7 @@
         rel="stylesheet">
     <link rel="icon" href="images/americano-fav.ico">
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
     <script src="scripts/full-menu.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <title>Americano Restaurant | Menu</title>
@@ -37,7 +38,7 @@
             <img src="images/logo-americano-ofi.webp" alt="Americano Restaurant logo">
         </div>
         <nav id="nav-bar">
-            <ul>
+            <ul id="nav-menu">
                 <li class="nav-item"><a href="index.html">Home</a></li>
                 <li class="nav-item"><a href="menu.html">Menu</a></li>
                 <li class="nav-item"><a href="contact.html">Contact</a></li>
@@ -50,8 +51,22 @@
     <main>
         <section class="menu-section">
             <h1>Our Full Menu</h1>
+            <div class="recommendation">
+                <h2>These are our recommendations!</h2>
+                <button id="cold">For could</button>
+                <button id="heat">For heat</button>
+                <button id="whim">for a craving</button>
+            </div>
             <div id="menu-cards"></div>
         </section>
+
+        <div id="recommendation-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3 id="modal-title"></h3>
+                <p id="modal-text"></p>
+            </div>
+        </div>
     </main>
     <!--=====Footer======-->
     <footer>

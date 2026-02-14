@@ -19,6 +19,12 @@
         color: var(--text-light);
     }
 
+    nav ul a:hover,
+    nav ul a:focus {
+        color: var(--text-dark);
+        background-color: var(--text-light);
+    }
+
     /*===============================Index: Hero section===========================*/
     .hero img {
         width: 100%;
